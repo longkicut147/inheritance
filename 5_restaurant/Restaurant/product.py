@@ -1,11 +1,13 @@
 class Product:
     def __init__(self,name:int,price:float) -> None:
-        self.__name = name 
+        self.__name = name
         self.__price = price
+        self.name = self.name()
+        self.price = self.price()
 
-    def get_name(self):
+    def name(self):
         return self.__name
     
-    def get_price(self):
+    def price(self):
         return self.__price
     

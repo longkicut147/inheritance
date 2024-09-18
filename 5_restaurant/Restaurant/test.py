@@ -1,6 +1,7 @@
-from Restaurant.beverage.beverage import Beverage
-from Restaurant.product import Product
-from Restaurant.food.soup import Soup
+from product import Product
+from beverage.beverage import Beverage
+from food.soup import Soup
+
 
 product = Product("coffee", 2.5)
 print(product.__class__.__name__)
@@ -17,4 +18,4 @@ print(soup.__class__.__name__)
 print(soup.__class__.__bases__[0].__name__)
 print(soup.name)
 print(soup.price)
-print(soup.grams)
+print(soup.gram)
